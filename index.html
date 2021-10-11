@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>Movies</title>
+</head>
+<body>
+  <main class="py-5 bg-light">
+    <div class="container">
+      <h1 class="mb-5 text-center bold">Movies</h1>
+
+      <ul class="movies row justify-content-around"></ul>
+    </div>
+  </main>
+
+  <template id="movies-card-template">
+    <li class="card mb-4" style="width: 17rem;">
+      <img class="img-fluid" src="https://www.iguides.ru/upload/iblock/c8d/c8d0b1450dddc0374cd8bfb957686293.png" alt="">
+      <div class="card-body">
+        <h5 class="card-title fw-bold js-title"></h5>
+        <p class="card-text fw-bold js-year"></p>
+        <p class="card-text text-secondary fst-italic js-categories"></p>
+        <a class="card-text btn-link js-link" href="https://www.youtube.com/watch?v=rFhrdwQ9-zQ" target="_blank"></a>
+      </div>
+    </li>
+  </template>
+
+
+  <script src="javascript/movies.js"></script>
+  <script src="javascript/kinolar.js"></script>
+  <script src="javascript/utils.js"></script>
+  <script src="javascript/js.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
